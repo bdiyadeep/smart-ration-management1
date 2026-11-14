@@ -1,0 +1,457 @@
+/* =========================
+   RESET AND FONT
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+/* =========================
+   COMMON BACKGROUND
+   ========================= */
+
+.welcome-page,
+.selection-page,
+.login-page {
+    background: linear-gradient(
+        135deg,
+        #ffd1dc,
+        #fff7fb,
+        #d8c7ff
+    );
+}
+
+
+/* =========================
+   FIRST LOGO PAGE
+   ========================= */
+
+.welcome-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.welcome-content {
+    width: 100%;
+}
+
+.logo-circle {
+    width: 230px;
+    height: 230px;
+    padding: 7px;
+    margin: 0 auto 35px;
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #ff9933,
+        #ffffff,
+        #138808
+    );
+
+    box-shadow: 0 15px 35px rgba(30, 40, 100, 0.30);
+    overflow: hidden;
+}
+
+.logo-circle img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+}
+
+.welcome-content h1 {
+    color: #12346b;
+    font-size: 56px;
+    margin-bottom: 20px;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.12);
+}
+
+.title-decoration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin: 20px auto;
+}
+
+.title-decoration span {
+    width: 250px;
+    max-width: 30%;
+    height: 2px;
+    background: #12346b;
+}
+
+.title-decoration b {
+    color: #1455a0;
+    font-size: 25px;
+}
+
+.subtitle {
+    color: #183d73;
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 38px;
+}
+
+.continue-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+
+    min-width: 300px;
+    padding: 16px 35px;
+
+    color: white;
+    background: #10499d;
+    border: 3px solid white;
+    border-radius: 40px;
+
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+
+    box-shadow: 0 8px 22px rgba(25, 75, 160, 0.35);
+    transition: 0.3s;
+}
+
+.continue-button:hover {
+    background: #073675;
+    transform: translateY(-4px);
+}
+
+
+/* =========================
+   SELECT LOGIN PAGE
+   ========================= */
+
+.selection-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 20px;
+}
+
+.selection-box {
+    width: 900px;
+    max-width: 100%;
+    padding: 40px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 28px;
+
+    box-shadow: 0 18px 45px rgba(60, 40, 100, 0.18);
+}
+
+.small-logo {
+    width: 105px;
+    height: 105px;
+    padding: 4px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #ff9933,
+        #ffffff,
+        #138808
+    );
+
+    box-shadow: 0 8px 22px rgba(30, 40, 100, 0.22);
+    overflow: hidden;
+}
+
+.small-logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+}
+
+.selection-box > h1 {
+    color: #12346b;
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.welcome-text {
+    color: #666;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   CUSTOMER AND EMPLOYEE CARDS
+   ========================= */
+
+.user-selection {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 28px;
+}
+
+.user-card {
+    flex: 1;
+    max-width: 350px;
+    padding: 30px 24px;
+
+    background: white;
+    border: 2px solid #eee1f4;
+    border-radius: 22px;
+
+    box-shadow: 0 8px 22px rgba(50, 40, 90, 0.08);
+    transition: 0.25s;
+}
+
+.user-card:hover {
+    transform: translateY(-6px);
+    border-color: #a69af7;
+    box-shadow: 0 14px 28px rgba(50, 40, 90, 0.15);
+}
+
+.user-icon {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+
+    font-size: 38px;
+    box-shadow: 0 8px 18px rgba(99, 102, 241, 0.25);
+}
+
+.user-card h2 {
+    color: #222;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.user-card p {
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.select-button {
+    display: block;
+    width: 100%;
+    padding: 14px 12px;
+
+    color: white;
+    background: #6366f1;
+    border-radius: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: 0.25s;
+}
+
+.select-button:hover {
+    background: #4f46e5;
+}
+
+.employee-button {
+    background: #174ea6;
+}
+
+.employee-button:hover {
+    background: #103b80;
+}
+
+
+/* =========================
+   INDIVIDUAL LOGIN PAGES
+   ========================= */
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.login-box {
+    width: 450px;
+    max-width: 100%;
+    padding: 38px;
+
+    background: white;
+    border-radius: 22px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.login-box h1 {
+    text-align: center;
+    color: #12346b;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.form-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 28px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 13px;
+
+    border: 1px solid #d4c6e8;
+    border-radius: 9px;
+
+    font: 16px "Times New Roman", Times, serif;
+}
+
+.input-box input:focus {
+    outline: none;
+    border-color: #6366f1;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #6366f1;
+    color: white;
+
+    font: bold 18px "Times New Roman", Times, serif;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #4f46e5;
+}
+
+.message {
+    margin-bottom: 20px;
+    padding: 12px;
+
+    border-radius: 8px;
+    background: #f0eaff;
+
+    text-align: center;
+    color: #333;
+}
+
+.home-link {
+    display: inline-block;
+    margin-top: 28px;
+
+    color: #5146a5;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 650px) {
+    .welcome-content h1 {
+        font-size: 36px;
+    }
+
+    .logo-circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .subtitle {
+        font-size: 19px;
+    }
+
+    .selection-box {
+        padding: 28px 18px;
+    }
+
+    .selection-box > h1 {
+        font-size: 32px;
+    }
+
+    .welcome-text {
+        font-size: 18px;
+    }
+
+    .user-selection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-card {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .continue-button {
+        min-width: 240px;
+        padding: 14px 30px;
+        font-size: 21px;
+    }
+
+    .login-box {
+        padding: 28px 22px;
+    }
+}
+
+@media (max-width: 400px) {
+    .welcome-content h1 {
+        font-size: 29px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    .logo-circle {
+        width: 160px;
+        height: 160px;
+    }
+}
